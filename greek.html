@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greek Yogurt 🥛</title>
+    <style>
+        h1{
+            text-align: center;
+            color: #7d51e8;
+
+        }
+        h2{
+            text-align: center;
+            border: 1px solid #7d51e8;
+            padding: 15px;
+            font-size: 18px;
+            border-radius: 4px;
+
+        }
+        img{
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            border-radius: 10px;
+            
+        }
+        P{
+            line-height: 1.5;
+            font-size: 13px;
+            margin: 20px 0 10px;
+
+        }
+        button{
+            display: block;
+            margin: 20px auto;
+            background: #7d51e8;
+            color:white;
+            font-size: 10px;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 6px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+            transition: all 200ms case-in-out;
+
+        }
+        button:hover{
+            opacity: 0.9;
+            cursor: pointer;
+        }
+        .container{
+           max-width: 600px; 
+           margin: 0 auto;
+           padding: 10px 60px;
+        }
+        .learn-more{
+            color: #7d51e8;
+            text-decoration: none;
+            font-size: 11px;
+        }
+        .learn-more:hover{
+            text-decoration: underline;
+
+        }
+        .footer{
+            text-align: center;
+         }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1>
+        I love Yogurt
+    </h1>
+    <h2>
+        Especially Greek Yogurt
+    </h2>
+    <img src="https://www.walderwellness.com/wp-content/uploads/2022/02/Peanut-Butter-Greek-Yogurt-Walder-Wellness-2-680x1020.jpg"
+     alt="Greek Yogurt"
+     width="200">
+     <p>
+        So what is Greek yogurt? Greek yogurt is essentially the same as regular yogurt with the addition of one critical step – straining!
+         At the very end, the yogurt is strained to remove the excess watery whey, creating a thicker, more protein-dense product.
+         So while we call this variation of yogurt “Greek yogurt” in the U.S., you may see it called “strained yogurt” in other areas of the world.
+         </p>
+         <a 
+         href="https://en.wikipedia.org/wiki/Strained_yogurt"
+         target="_blank" 
+         class="learn-more">
+             Learn more on wikipedia
+         </a>
+         <button class="buy-Button">
+             Buy Greek Yogurt
+         </button>
+         <p class="footer">
+         This page was built by 
+         <a href="" target="_blank">
+            Angelina Liapin
+         </a>
+         </p>
+        </div>
+        <script>
+            function buy(){
+                let name = prompt("what your name?");
+                let email = prompt("what is your email adress?");
+                let emoji=prompt("what is your favorite emoji");
+
+                alert("Thank you " + name + 
+                "! we will be in touch by email, meanwhile hae love yogurt" 
+                + emoji)
+            }
+            let buyButton = document.querySelector(".buy-Button");
+            buyButton.addEventListener("click", buy)
+        </script>
+</body>
+</html>

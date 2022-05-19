@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Project😍</title>
+    <style>
+        h1{
+            text-align: center;
+            color: black;
+        }
+        h2{
+            text-align: center;
+            padding: 2px;
+            font-size: 18px;
+        }
+        img{
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        p{
+            line-height: 1.5;
+            font-size: 18px;
+            font-weight: 100;
+            margin: 20px 0 10px;
+            border: 4px solid #49FF00;
+            padding: 15px;
+            border-radius: 40px;
+
+        }
+        button{
+            display: block;
+            margin: 20px auto;
+            background: #E4AEC5;
+            color:#5EE6EB;
+            font-size: 30px;
+            font-weight: bold;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+            transition: all 200ms case-in-out;
+        }
+        button:hover{
+            background: #5EE6EB;
+            color: #E4AEC5;
+            border: 1px solid grey;
+        }
+        .learn-more{
+            color: black;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .learn-more:hover{
+            text-decoration: underline;
+        }
+        .word{
+            color: gold;
+        }
+        .cool{
+            color: slategrey;
+        }
+        .site{
+            text-align: center;
+            padding: 2px;
+            font-size: 18px;
+        }
+        .ssi{
+            text-align: center;
+        }
+        .block{
+           max-width: 600px; 
+           margin: 0 auto;
+           padding: 10px 60px;
+        }
+    </style>
+</head>
+<body bgcolor="silver">
+    <div class="block">
+        <h1>
+            👛I like to study 
+            <br /> <span class="word">Cryptocurrency</span>
+        </h1>
+        <hr>
+        <h2>
+            I use the binance platform to study
+        </h2>
+        <hr>
+        <button class="two">
+            More instructions
+        </button>
+        <img src="https://www.kaspersky.com/content/en-global/images/repository/isc/2021/cryptocurrency_image1_1130490519_670x377px_300dpi.jpg" 
+        width="500">
+        <p>
+            <strong>
+                <em>
+           <span class="word">Cryptocurrency</span>, sometimes called crypto-currency or crypto, 
+            is any form of currency that exists digitally or virtually and uses cryptography to secure transactions.
+             Cryptocurrencies don't have a central issuing or regulating authority, 
+             instead using a decentralized system to record transactions and issue new units.
+             </strong>
+            </em>
+        </p>
+        <div class="ssi">
+        <a href="https://www.kaspersky.com/resource-center/definitions/what-is-cryptocurrency"
+        target="_blank" 
+        class="learn-more">
+        Learn more on website📃
+        </a>
+    </div>
+    <form>
+        <button class="buy-Button" type="button" value="button" onClick='location.href="https://www.binance.com/uk-UA"'>
+            Buy Cryptocurrency
+        </button>
+    </form>
+        <div class="site">
+        This page was built by 
+        <a href="https://www.linkedin.com/in/angelina-liapin-165617203" target="_blank">
+           <span class="cool">Angelina Liapin</span>
+        </a>
+    </div>
+    </div>
+    <script>
+                function buy(){
+                let name = prompt("what your name?");
+                let email = prompt("what is your email adress?");
+
+                alert("Hello " + name + 
+                "! I sent you instructions on how to buy your first token to your email🤑")
+            }
+            let Two = document.querySelector(".two");
+            Two.addEventListener("click", buy)
+    </script>
+</body>
+</html>
